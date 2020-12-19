@@ -1,0 +1,406 @@
+/*============= RESETS ============= font-family: 'Lato', sans-serif;*/
+
+/*-- iPhone X Remove Gutters --*/
+html {
+  padding: env(safe-area-inset);
+}
+/*-- Prevent Horizontal Scrolling & Font Style -- */
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #505962;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.text-pink {
+  color: #ff6663;
+}
+
+
+/*============= NAVIGATION =============*/
+
+.offset:before {
+  content: "";
+  height: 4rem;
+  display: block;
+  margin-top: -4rem;
+}
+
+[class*="col-"] {
+  padding: 1rem;
+}
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar {
+  padding: 0.7rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  transition: background-color 0.5s ease;
+}
+
+.navbar-nav li {
+  padding-right: 0.8rem;
+}
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #ff6663;
+  text-shadow: 0.1rem 0.01rem 0.5rem gray;
+}
+
+.custom-toggler-icon {
+  color: black;
+  font-size: 1.6rem;
+}
+
+.navbar.solid,
+.nav.solid-toggle {
+  background: rgba(0, 0, 0, 0.363);
+  transition: background-color 1s ease;
+}
+/*-- Remove Button Outline --*/
+button:focus,
+a:focus,
+a.btn:focus {
+  outline: 0;
+  -webkitappearance: none;
+  box-shadow: none;
+}
+
+button,
+a,
+a.btn,
+.svg-inline--fa {
+  transition: all 0.6s ease;
+}
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home-inner {
+  background-image: url(../img/background.jpg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  /*for iphone utilisation*/
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  display: table;
+}
+
+.caption {
+  z-index: 1;
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  max-width: 100%; 
+}
+
+.caption h1 {
+  font-size: 4.5rem;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-size: 2.5rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 2rem;
+}
+
+.caption .btn-lg {
+  border-width: medium;
+  padding: 0.8rem 1.7rem;
+  font-size: 1.1rem;
+  color: #ff6663;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+}
+.down-arrow .svg-inline--fa {
+  color: white;
+  font-size: 2.2rem;
+  opacity: 0.3;
+}
+
+.down-arrow .svg-inline--fa:hover {
+  opacity: 0.8;
+}
+
+.main {
+  background-image: linear-gradient(to bottom right, #71a8b9, #34cedc);
+  width: 100%;
+}
+
+.main .catch {
+  color: white;
+  text-shadow: 0.1rem 0.01rem 0.5rem gray;
+}
+
+.btn-sm {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.5rem 1.1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+.btn-nuno {
+  background-color: #1ebba3;
+  color: white;
+}
+.btn-nuno:hover {
+  background-color: #189582;
+  color: white;
+}
+
+.pricing-column {
+  background-color: white;
+  height: 100%;
+  padding: 1.6rem;
+  border-top: 0.25rem solid #1ebba3;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.7s ease;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-column:hover {
+  transform: scale(1.1);
+}
+.pricing-column h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.ribbon {
+  background-color: #6c757d;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  height: 2rem;
+  width: 10rem;
+  padding-top: 0.4rem;
+  position: absolute;
+  transform: rotate(45deg);
+  right: -2.8rem;
+  top: 1.5rem;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+h3.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #1ebba3;
+  margin: 0 auto 2rem;
+}
+.feature span {
+  color: #1ebba3;
+  margin-bottom: 0.6rem;
+}
+.feature h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding-bottom: 0.4rem;
+}
+
+#clients-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.clients img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.clients img:hover {
+  transform: scale(0.95);
+}
+blockquote .svg-inline--fa {
+  margin: 1rem;
+  color: #1ebba3;
+}
+.clients-hr {
+  border-top: 0.1rem solid #1ebba3;
+}
+
+.footer {
+  background: url("../img/footer/footer.jpg") no-repeat;
+  background-size: cover;
+  color: white;
+}
+.row.outer {
+  background-color: rgba(57, 63, 70, 0.85);
+  padding: 1rem 2rem 3rem;
+}
+.footer img {
+  height: 2rem;
+  margin: 1.5rem 0;
+}
+.footer a,
+.footer ul.social li a {
+  color: white;
+}
+.footer ul.social li a:hover {
+  color: #1ebba3;
+}
+.footer h3 {
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+
+.form-group {
+  margin-bottom: 1.3rem;
+}
+.form-control {
+  background-color: #53595f;
+  border-radius: 0;
+  border: 0.15rem solid #666b71;
+  color: white !important;
+  font-size: 1.1rem;
+}
+.form-control:focus {
+  background-color: #53595f;
+  border: 0.15rem solid #666b71;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b2b5b8 !important;
+}
+hr.socket {
+  border-top: 0.2rem solid #666b71;
+  width: 100%;
+}
+
+
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: 0.3;
+  z-index: 1000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: 0.5;
+}
+.top-scroll .svg-inline--fa {
+  background: white;
+  color: #53595f;
+  font-size: 3rem;
+  height: 1.7rem;
+}
+
+@media (max-width: 991.98px) {
+  .caption h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 0.8rem;
+  }
+  .caption h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1.7rem;
+  }
+  .caption .btn-lg {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+  .clients img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .caption h1 {
+    font-size: 2.7rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+  .caption h3 {
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+  }
+  .caption .btn-lg {
+    padding: 0.6rem 1.1rem;
+  }
+  #features h1 {
+    font-size: 2rem;
+  }
+
+  .footer {
+    background: url("../img/footer/footer-mobile.jpg") no-repeat;
+  }
+  .top-scroll {
+    display: none !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .caption h1 {
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.4rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .caption .btn-lg {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+.end {
+  padding: 0;
+  margin: 0;
+}
+.copyright {
+  float: left;
+}
+
+.credits {
+  float: right;
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+
